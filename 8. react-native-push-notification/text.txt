@@ -1,0 +1,36 @@
+seting firebase buka firebase dan ...
+-ambil data dari main-androidManifest -> ambil nama pakckage app ""
+-nama package ditaruh di project firebase android
+
+add /android/gradle.properties:
+    -org.gradle.jvmargs=-Xmx2048m -XX:MaxPermSize=512m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8
+add firebase.json on root
+    -doc https://rnfirebase.io/ gettingstarted
+
+install 
+    -yarn add @react-native-firebase/messaging
+    -yarn add @notifee/react-native
+
+error : local storage video 21.20
+
+=>ganti grandle ke jdk 33
+lanjut ke app
+
+postman
+https://medium.com/android-school/test-fcm-notification-with-postman-f91ba08aacc3
+
+buka postman ambil key dari firabase dari opsi 
+header postman
+-setting project firebase->cloud messaging (aktifkan dulu)->generate key ->paste ke postman cara mendapatkan key (https://documentation.onesignal.com/docs/generate-a-google-server-api-key)
+
+body 
+-copas dari website diatas
+
+video 41.24
+
+cara agart remote terbaca di foregraoud
+https://rnfirebase.io/messaging/usage#foreground-state-messages
+
+seting agar rapi kalo kelamaan di alert aja
+https://notifee.app/react-native/reference
+src/service/notif.js
